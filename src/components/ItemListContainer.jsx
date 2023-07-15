@@ -1,16 +1,20 @@
 import { Container } from "@chakra-ui/react";
 import React from "react";
-
-const ItemListContainer = ({ greeting, head }) => {
+const ItemListContainer = ({ greeting }) => {
+  const list = {
+    display: "flex",
+    flexDir: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "80vh",
+    background: "black",
+    maxWidth: "100%",
+    color: "white",
+    fontSize: "160px",
+  };
   return (
-    <Container
-      display="flex"
-      flexDir="column"
-      justifyContent="center"
-      alignItems="center"
-    >
+    <Container sx={list}>
       <h1>{greeting}</h1>
-      <p>{head}</p>
     </Container>
   );
 };

@@ -5,15 +5,13 @@ const App = () => {
   return (
     <div>
       <NavBar
-        brand="UMBRAL ®"
+        brand="UMBRAL® STORE"
         navLinkOne="Web Development"
         navLinkTwo="Servicios"
         navLinkThree="Consultas"
-        altBrandLogo='icono umbral'
+        altBrandLogo="icono umbral"
       />
-      <ItemListContainer
-      greeting="Bienvenido a mi tienda" 
-      head="Como te va?" />
+      <ItemListContainer greeting="Digital- First Design Agency" />
     </div>
   );
 };
