@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import CartWidget from "./CartWidget";
 const NavBar = ({
+  /*Paso las props para hacer el componente mas reutilizable asumo? */
   brand,
   navLinkOne,
   navLinkTwo,
@@ -48,6 +49,7 @@ const NavBar = ({
         <Link href="#">{navLinkOne}</Link>
         <Link href="#">{navLinkTwo}</Link>
         <Link href="#">{navLinkThree}</Link>
+        <Button>Login</Button>
       </Box>
       <Box>
         <CartWidget alt="icono carrito" />

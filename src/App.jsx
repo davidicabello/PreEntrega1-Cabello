@@ -11,7 +11,7 @@ const App = () => {
         navLinkThree="Consultas"
         altBrandLogo="icono umbral"
       />
-      <ItemListContainer greeting="Digital- First Design Agency" />
+      <ItemListContainer greeting="Digital-First Design Agency Store./" />
     </div>
   );
 };
