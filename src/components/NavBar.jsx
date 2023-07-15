@@ -1,36 +1,56 @@
 import React from "react";
-import { ChevronDownIcon } from "@chakra-ui/icons";
+import iconoUmbralStore from "../assets/iconoUmbralStore.png";
+import "../stylesheets/NavBar.css";
 import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
+  Heading,
   Button,
   Flex,
   Spacer,
   Box,
+  Text,
+  Link,
 } from "@chakra-ui/react";
 import CartWidget from "./CartWidget";
-const NavBar = () => {
+const NavBar = ({
+  brand,
+  navLinkOne,
+  navLinkTwo,
+  navLinkThree,
+  altBrandLogo,
+}) => {
+  const umbralName = {
+    color: "white",
+    fontSize: "22px",
+    fontWeight: "bold",
+    letterSpacing: "8px",
+  };
+  const linkStyles = {
+    display: "flex",
+    alignItems: "center",
+    gap: "110px",
+    color: "#1C325A",
+  };
   return (
-    <Flex>
-      <Menu>
-        <Box p="4" bg="red.400">
-          <h2>LOGO</h2>
-        </Box>
-        <Spacer />
-        <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-          Actions
-        </MenuButton>
-        <MenuList>
-          <MenuItem>Download</MenuItem>
-          <MenuItem>Create a Copy</MenuItem>
-          <MenuItem>Mark as Draft</MenuItem>
-        </MenuList>
-      </Menu>
+    <Flex as="nav" p="10px" alignItems="center" gap="50px" bg="lightgrey">
+      <Box sx={umbralName}>
+        <Text>{brand}</Text>
+      </Box>
+      <Heading>
+        <img
+          className="iconoPrincipalUmbral"
+          src={iconoUmbralStore}
+          alt={altBrandLogo}
+        />
+      </Heading>
       <Spacer />
-      <Box p="4" bg="red.400">
-        <CartWidget />
+      <Box sx={linkStyles}>
+        {/* Encontre este componente y pense que serviria para hacer los <a> del nav */}
+        <Link href="#">{navLinkOne}</Link>
+        <Link href="#">{navLinkTwo}</Link>
+        <Link href="#">{navLinkThree}</Link>
+      </Box>
+      <Box>
+        <CartWidget alt="icono carrito" />
       </Box>
     </Flex>
   );

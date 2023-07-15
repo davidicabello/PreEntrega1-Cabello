@@ -1,11 +1,21 @@
+import { Flex, Box } from "@chakra-ui/react";
 import React from "react";
-
-const CartWidget = () => {
+import iconoCarrito from "../assets/icon-cart.svg";
+import "../stylesheets/CartWidget.css";
+const CartWidget = (alt) => {
   return (
-    <div>
-      <h4>Carrito</h4>
-      <p>5</p>
-    </div>
+    <>
+      <Box>
+        <Flex p="10px" alignItems="center" gap="5px">
+          <img
+            className="iconoCarrito"
+            src={iconoCarrito}
+            alt={alt}
+          />
+          <p>10</p>
+        </Flex>
+      </Box>
+    </>
   );
 };
 
