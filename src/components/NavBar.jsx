@@ -9,6 +9,7 @@ import {
   Box,
   Text,
   Link,
+  Code,
 } from "@chakra-ui/react";
 
 const umbralName = {
@@ -22,6 +23,7 @@ const linkStyles = {
   alignItems: "center",
   gap: "90px",
   color: "#1C325A",
+  fontWeight: "bold",
 };
 
 export const NavBar = ({
@@ -54,12 +56,20 @@ export const NavBar = ({
       <Spacer />
       <Box sx={linkStyles}>
         {/* Encontre este componente y pense que serviria para hacer los <a> del nav */}
-        <Link href="#">{navLinkOne}</Link>
-        <Link href="#">{navLinkTwo}</Link>
-        <Link href="#">{navLinkThree}</Link>
+        <Link href="#">
+          <Code children={navLinkOne} />
+        </Link>
+        <Link href="#">
+          <Code colorScheme="red" children={navLinkTwo} />
+        </Link>
+        <Link href="#">
+          <Code colorScheme="yellow" children={navLinkThree} />
+        </Link>
       </Box>
       <Box>
-        <Button>Login</Button>
+        <Button h="5px" sx={linkStyles}>
+          <Code children="login" />
+        </Button>
       </Box>
       <Box>
         <CartWidget alt="icono carrito" />
