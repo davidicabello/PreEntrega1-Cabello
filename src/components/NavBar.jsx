@@ -1,6 +1,6 @@
-import React from "react";
 import iconoUmbralStore from "../assets/iconoUmbralStore.png";
 import "../stylesheets/NavBar.css";
+import { CartWidget } from "./CartWidget";
 import {
   Heading,
   Button,
@@ -10,8 +10,8 @@ import {
   Text,
   Link,
 } from "@chakra-ui/react";
-import CartWidget from "./CartWidget";
-const NavBar = ({
+
+export const NavBar = ({
   /*Paso las props para hacer el componente mas reutilizable asumo? */
   brand,
   navLinkOne,
@@ -57,5 +57,3 @@ const NavBar = ({
     </Flex>
   );
 };
-
-export default NavBar;

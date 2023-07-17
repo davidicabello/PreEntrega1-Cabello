@@ -1,7 +1,6 @@
-import React from "react";
-import NavBar from "./components/NavBar";
-import ItemListContainer from "./components/ItemListContainer";
-const App = () => {
+import { NavBar } from "./components/NavBar";
+import { ItemListContainer } from "./components/ItemListContainer";
+export const App = () => {
   return (
     <div>
       <NavBar
@@ -16,4 +15,4 @@ const App = () => {
   );
 };
 
-export default App;
+

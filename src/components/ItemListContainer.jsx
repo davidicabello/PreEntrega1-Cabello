@@ -1,6 +1,5 @@
 import { Container } from "@chakra-ui/react";
-import React from "react";
-const ItemListContainer = ({ greeting }) => {
+export const ItemListContainer = ({ greeting }) => {
   const list = {
     display: "flex",
     flexDir: "column",
@@ -18,5 +17,3 @@ const ItemListContainer = ({ greeting }) => {
     </Container>
   );
 };
-
-export default ItemListContainer;
