@@ -13,15 +13,15 @@ export const App = () => {
         altBrandLogo="icono umbral"
       />
       <ItemListContainer
-        colorBack="black"
+        colorBack="gray.700"
         greeting="Digital-First Design Agency Store./"
       />
       <ItemListContainer
-        colorBack="lightgrey"
+        colorBack="yellow.100"
         greeting="Design Agency Store./ Digital-First"
       />
       <ItemListContainer
-        colorBack="black"
+        colorBack="red.100"
         greeting="First Design-Digital- Store./ Agency "
       />
       <Testimonials />

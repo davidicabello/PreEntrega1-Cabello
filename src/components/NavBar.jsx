@@ -21,7 +21,7 @@ const umbralName = {
 const linkStyles = {
   display: "flex",
   alignItems: "center",
-  gap: "90px",
+  gap: "10px",
   color: "#1C325A",
   fontWeight: "bold",
 };
@@ -40,7 +40,7 @@ export const NavBar = ({
       p="10px"
       alignItems="center"
       gap="50px"
-      bg="lightgrey"
+      bg="gray.300"
       flexWrap="wrap"
     >
       <Box sx={umbralName}>
@@ -67,7 +67,7 @@ export const NavBar = ({
         </Link>
       </Box>
       <Box>
-        <Button h="5px" sx={linkStyles}>
+        <Button h="0px" sx={linkStyles}>
           <Code children="login" />
         </Button>
       </Box>
