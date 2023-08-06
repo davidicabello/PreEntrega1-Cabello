@@ -1,5 +1,4 @@
 import { Container } from "@chakra-ui/react";
-// import videoBackground from "../assets/video.mp4";
 import "../stylesheets/ItemListContainer.css";
 export const ItemListContainer = ({ greeting, colorBack }) => {
   const list = {
@@ -14,7 +13,6 @@ export const ItemListContainer = ({ greeting, colorBack }) => {
   return (
     <Container className="main" sx={list} background={colorBack}>
       <h1>{greeting}</h1>
-      {/* <video src={videoBackground} autoPlay loop muted></video> */}
     </Container>
   );
 };
