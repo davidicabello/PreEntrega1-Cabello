@@ -1,5 +1,6 @@
 import { NavBar } from "./components/NavBar";
 import { ItemListContainer } from "./components/ItemListContainer";
+import { Testimonials } from "./components/Testimonials";
 import { ItemCount } from "./components/ItemCount";
 export const App = () => {
   //TAREA EN CLASE
@@ -64,7 +65,11 @@ export const App = () => {
         colorBack="red.100"
         greeting="First Design-Digital- Store./ Agency "
       />
-      <ItemCount stock={10} initial={1} onAdd={addToCart} />
+      <ItemCount
+        stock={10}
+        initial={1}
+        /*onAdd = {}*/
+      />
     </div>
   );
 };
