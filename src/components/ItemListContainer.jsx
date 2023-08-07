@@ -28,6 +28,14 @@ export const ItemListContainer = () => {
       price: 350,
       img: webDesing,
     },
+    {
+      id: 4,
+      nombre: "Producto D",
+      descripcion: "Descripcion de producto D",
+      stock: 20,
+      price: 450,
+      img: webDesing,
+    },
   ];
 
   const getProductos = new Promise((resolve, reject) => {
