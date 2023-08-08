@@ -22,7 +22,7 @@ export const ItemDetail = ({ productos }) => {
 
   const filteredProducts = productos.filter((producto) => producto.id == id);
   return (
-    <Flex>
+    <>
       {filteredProducts.map((p) => {
         return (
           <Box key={p.id}>
@@ -51,6 +51,6 @@ export const ItemDetail = ({ productos }) => {
           </Box>
         );
       })}
-    </Flex>
+    </>
   );
 };

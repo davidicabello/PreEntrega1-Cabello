@@ -1,5 +1,5 @@
 import { ItemDetail } from "./ItemDetail";
-
+import webDesing from "../assets/web.png";
 export const ItemDetailContainer = () => {
   const productos = [
     {
@@ -57,15 +57,6 @@ export const ItemDetailContainer = () => {
     .catch((error) => {
       console.log(error);
     });
-
-  const list = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    maxWidth: "100%",
-    color: "white",
-    fontSize: "1em",
-  };
   return (
     <>
       <ItemDetail productos={productos} />
