@@ -9,6 +9,7 @@ export const ItemDetailContainer = () => {
       stock: 5,
       price: 150,
       img: webDesing,
+      category: "A",
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ export const ItemDetailContainer = () => {
       stock: 10,
       price: 250,
       img: webDesing,
+      category: "B",
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ export const ItemDetailContainer = () => {
       stock: 15,
       price: 350,
       img: webDesing,
+      category: "C",
     },
     {
       id: 4,
@@ -33,6 +36,7 @@ export const ItemDetailContainer = () => {
       stock: 20,
       price: 450,
       img: webDesing,
+      category: "D",
     },
   ];
 

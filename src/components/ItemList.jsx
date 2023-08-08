@@ -12,6 +12,7 @@ export const ItemList = ({ productos }) => {
             stock={pr.stock}
             price={pr.price}
             img={pr.img}
+            category={pr.category}
           />
         );
       })}
