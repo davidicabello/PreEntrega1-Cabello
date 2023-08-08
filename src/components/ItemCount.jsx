@@ -35,7 +35,7 @@ export const ItemCount = ({ stock, initial, onAdd }) => {
           <NumberInputField />
           <Button onClick={increment}>+</Button>
         </NumberInput>
-        <Button onClick={addToCart}>Agregar al carrito</Button>
+        <Button onClick={addToCart}>Agregar</Button>
       </HStack>
     </>
   );
