@@ -11,9 +11,11 @@ import {
   Text,
   Image,
   Flex,
+  Link,
+  Button,
 } from "@chakra-ui/react";
 
-export const Item = ({ nombre, descripcion, stock, price, img }) => {
+export const Item = ({ id, nombre, descripcion, stock, price, img }) => {
   const onAdd = (count) => {
     alert(`Agregaste ${count} items al carrito`);
   };
@@ -38,6 +40,7 @@ export const Item = ({ nombre, descripcion, stock, price, img }) => {
         <CardFooter>
           <ButtonGroup spacing="2">
             <ItemCount stock={stock} initial={1} onAdd={onAdd} />
+            <Button to={`/item/${id}`}>Detalles</Button>
           </ButtonGroup>
         </CardFooter>
       </Card>
