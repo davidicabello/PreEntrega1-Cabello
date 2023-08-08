@@ -14,6 +14,9 @@ import {
 } from "@chakra-ui/react";
 
 export const Item = ({ nombre, descripcion, stock, price, img }) => {
+  const onAdd = (count) => {
+    alert(`Agregaste ${count} items al carrito`);
+  };
   return (
     <Flex>
       <Card maxW="sm">
@@ -34,11 +37,7 @@ export const Item = ({ nombre, descripcion, stock, price, img }) => {
         <Divider />
         <CardFooter>
           <ButtonGroup spacing="2">
-            <ItemCount
-              stock={stock}
-              initial={1}
-              /*onAdd = {}*/
-            />
+            <ItemCount stock={stock} initial={1} onAdd={onAdd} />
           </ButtonGroup>
         </CardFooter>
       </Card>
