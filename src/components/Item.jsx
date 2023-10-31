@@ -1,5 +1,6 @@
 import { ItemCount } from "./ItemCount";
 import "../stylesheets/Item.css";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardBody,
@@ -11,7 +12,6 @@ import {
   Text,
   Image,
   Flex,
-  Link,
   Button,
 } from "@chakra-ui/react";
 
@@ -40,7 +40,9 @@ export const Item = ({ id, nombre, descripcion, stock, price, img }) => {
         <CardFooter>
           <ButtonGroup spacing="2">
             <ItemCount stock={stock} initial={1} onAdd={onAdd} />
-            <Button to={`/item/${id}`}>Detalles</Button>
+            <Button>
+              <Link to={`/item/${id}`}>Detalles</Link>
+            </Button>
           </ButtonGroup>
         </CardFooter>
       </Card>

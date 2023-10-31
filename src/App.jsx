@@ -40,6 +40,8 @@ export const App = () => {
           />
           <Route exact path="/item/:id" element={<ItemDetailContainer />} />
         </Routes>
+        <ItemListContainer />
+        <ItemDetailContainer />
       </BrowserRouter>
     </>
   );
